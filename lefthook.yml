@@ -1,0 +1,20 @@
+pre-commit:
+  parallel: true
+  commands:
+    check:
+      run: bunx biome check --write --no-errors-on-unmatched --files-ignore-unknown=true {staged_files}
+      stage_fixed: true
+    sort-package-json:
+      glob: "*package.json"
+      run: bunx sort-package-json {staged_files} && git update-index --again
+    case-police:
+      run: bunx case-police --fix {staged_files} && git update-index --again
+    # TODO implement knip
+    # knip:
+    #   run: bunx --bun knip
+
+
+commit-msg:
+  commands:
+    "lint commit message":
+      run: bunx --no -- commitlint --edit "$1"

@@ -1,0 +1,28 @@
+{
+  "cSpell.words": [
+    "aryz",
+    "biomejs",
+    "breakline",
+    "bunx",
+    "commitlint",
+    "degit",
+    "elysia",
+    "elysiajs",
+    "gitmoji",
+    "googleapis",
+    "knip",
+    "lefthook",
+    "mugencraft",
+    "tada",
+    "tailwindcss",
+    "turbobun",
+    "Turborepo",
+    "velite"
+  ],
+  "editor.codeActionsOnSave": {
+    "quickfix.biome": "explicit",
+    "source.organizeImports.biome": "explicit"
+  },
+  "editor.defaultFormatter": "biomejs.biome",
+  "editor.formatOnSave": true
+}

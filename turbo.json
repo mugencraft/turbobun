@@ -1,0 +1,12 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "tasks": {
+    "build": {
+      "outputs": [".next/**", "dist/**", ".velite/**", "!.next/cache/**", "styled-system/**"],
+      "dependsOn": ["^build"]
+    },
+    "lint": {},
+    "test": {},
+    "typecheck": {}
+  }
+}
