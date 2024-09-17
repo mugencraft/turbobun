@@ -39,7 +39,7 @@
     "@types/bun": "latest",
     "commitizen": "4.3.0",
     "cz-git": "1.9.4",
-    "inquirer": "10.2.2",
+    "inquirer": "11.0.2",
     "knip": "5.30.1",
     "lefthook": "1.7.15",
     "turbo": "2.1.1",
