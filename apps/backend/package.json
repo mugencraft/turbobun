@@ -7,10 +7,10 @@
     "dev": "bun run --watch src/index.ts"
   },
   "dependencies": {
-    "elysia": "latest"
+    "elysia": "1.1.16"
   },
   "devDependencies": {
-    "@types/bun": "^1.1.10",
-    "@types/node": "20.16.5"
+    "@types/bun": "1.1.10",
+    "@types/node": "20.16.6"
   }
 }
