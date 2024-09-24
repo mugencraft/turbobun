@@ -1,25 +1,28 @@
 {
-  "name": "@turbobun/website",
+  "name": "website",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "build": "next build",
     "dev": "PORT=3005 next dev",
-    "start": "next start"
+    "start": "next start",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@turbobun/api": "workspace:*",
-    "next": "latest",
-    "react": "latest",
-    "react-dom": "latest"
+    "next": "14.2.6",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   },
   "devDependencies": {
-    "@types/node": "latest",
-    "@types/react": "latest",
-    "@types/react-dom": "latest",
+    "@types/bun": "1.1.10",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@turbobun/typescript-config": "*",
     "autoprefixer": "latest",
     "postcss": "latest",
     "tailwindcss": "latest",
-    "typescript": "latest"
+    "typescript": "^5"
   }
 }

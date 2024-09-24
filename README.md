@@ -65,10 +65,9 @@ See [ROADMAP][ROADMAP]
 - [Biome][Biome] - **ESLint** and **prettier** alternative
 - [TypeScript][TypeScript] for static type checking as **internal package**
 - [Renovate][Renovate]- Dependency updater
-- [sort-package-json][sort-package-json] - sort package.json
 - [case-police][case-police] - 🚨 Make the case correct, PLEASE!
 - [knip][knip]- Cut the clutter from TypeScript projects
-- [MarkdownLint][MarkdownLint] for linting markdown, see [MarkdownLint rules][MarkdownLint-rules]
+- [MarkdownLint][MarkdownLint] for linting markdown, see [MarkdownLint rules][MarkdownLint-rules] (as VS Code suggested plugin)
 - [CSVode Settings][vscode-settings] - workspace settings
 - [CSVode Extensions][vscode-extensions] - suggested extensions
 
@@ -136,50 +135,8 @@ Using [--filter][bun-filter], you can run the dev script in all packages in para
 ### Available Bun Actions
 
 ```sh
-# Develop
-bun dev
-# Build
-bun build
-# Clean node_modules
-bun clean
-# Commit workflow (CZ)
-bun commit
-
-## Linters
-
-# Check (Biome)
-bun check
-# Write Check Fix (Biome)
-bun check:fix
-# Format (Biome)
-bun format
-# Format Fix (Biome)
-bun format:fix
-# Check Lint (Biome)
-bun lint:biome
-# Fix Lint (Biome)
-bun lint:fix
-
-# Check Case
-bun check:case
-# Check unused files (Knip)
-bun check:knip
-# Check Markdown
-bun check:markdown
-# Check packages.json order
-bun check:packages
-# Fix packages.json order
-bun check:packages:fix
-
-# Test (Turbo)
-bun test
-# Lint (Turbo)
-bun lint
-# Type Check (Turbo)
-bun typecheck
-
-# Type Check (tsc)
-bun typecheck:tsc
+# Show Available actions
+bun run
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -362,7 +319,6 @@ Check [CONTRIBUTING][contributors-doc] for
 [vscode-settings]: https://code.visualstudio.com/docs/getstarted/settings#_settings-json-file
 [vscode-extensions]: https://code.visualstudio.com/docs/editor/extension-marketplace#_workspace-recommended-extensions
 [Biome]: https://biomejs.dev/
-[sort-package-json]: https://github.com/keithamus/sort-package-json
 [case-police]: https://github.com/antfu/case-police
 [knip]: https://knip.dev/
 [MarkdownLint]: https://github.com/DavidAnson/markdownlint

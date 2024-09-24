@@ -1,7 +1,14 @@
 {
-  "$schema": "https://turborepo.org/schema.json",
+  "$schema": "https://turbo.build/schema.json",
   "globalDependencies": ["**/.env"],
   "tasks": {
+    "//#format-and-lint": {},
+    "//#format-and-lint:fix": {
+      "cache": false
+    },
+    "transit": {
+      "dependsOn": ["^transit"]
+    },
     "build": {
       "env": [],
       "inputs": [
@@ -24,9 +31,6 @@
       ],
       "persistent": true,
       "cache": false
-    },
-    "lint": {},
-    "test": {},
-    "typecheck": {}
+    }
   }
 }

@@ -60,7 +60,7 @@
 
 #### Epic: Improve Linting Workflow
 
-- [ ] Add checks script to `package.json` to group all checks
+- [x] Add `check` script to `package.json` to group all checks
 
 #### Epic: Continuous Integration Setup
 

@@ -1,32 +1,20 @@
 {
   "name": "@turbobun/monorepo",
-  "version": "0.0.1",
   "private": true,
   "description": "Example of Turborepo setup with Bun, Biome/OXC and commitizen stuff.",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
+  "workspaces": ["apps/*", "packages/*"],
   "scripts": {
     "build": "turbo run build --filter='!./apps/website/**'",
-    "check": "biome check .",
-    "check:case": "bunx case-police .",
-    "check:fix": "biome check --write .",
+    "check": "bun format-and-lint && bun check:case && bun check:knip",
+    "check:case": "bunx --bun case-police",
     "check:knip": "bunx --bun knip",
-    "check:markdown": "bunx markdownlint '**/*.{md,mdx}' --ignore '**/node_modules/**'",
-    "check:packages": "bunx sort-package-json *package.json  --check",
-    "check:packages:fix": "bunx sort-package-json *package.json",
     "clean": "git clean -xdf .turbo node_modules",
     "commit": "git cz",
     "dev": "bun --filter '*' dev",
-    "format": "biome format .",
-    "format:fix": "biome format --write .",
-    "lint": "turbo run lint",
-    "lint:biome": "biome lint .",
-    "lint:fix": "biome lint --write .",
+    "format-and-lint": "biome check .",
+    "format-and-lint:fix": "biome check . --write",
     "test": "turbo run test:ci",
-    "typecheck": "turbo run typecheck",
-    "typecheck:tsc": "bunx --bun tsc"
+    "typecheck": "bun run --filter '*' typecheck"
   },
   "config": {
     "commitizen": {
@@ -42,10 +30,8 @@
     "commitizen": "4.3.0",
     "cz-git": "1.9.4",
     "lefthook": "1.7.16",
-    "turbo": "2.1.2"
+    "turbo": "2.1.2",
+    "typescript": "^5.4.5"
   },
-  "peerDependencies": {
-    "typescript": "5.6.2"
-  },
-  "packageManager": "bun@1.1.27"
+  "packageManager": "bun@1.1.28"
 }
