@@ -8,6 +8,7 @@
     "check": "bun format-and-lint && bun check:case && bun check:knip",
     "check:case": "bunx --bun case-police",
     "check:knip": "bunx --bun knip",
+    "check:updates": "bunx npm-check-updates -ui -ws",
     "clean": "git clean -xdf .turbo node_modules",
     "commit": "git cz",
     "dev": "bun --filter '*' dev",
@@ -31,7 +32,7 @@
     "cz-git": "1.9.4",
     "lefthook": "1.7.16",
     "turbo": "2.1.2",
-    "typescript": "^5.4.5"
+    "typescript": "5.6.2"
   },
-  "packageManager": "bun@1.1.28"
+  "packageManager": "bun@1.1.29"
 }
