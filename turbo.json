@@ -1,9 +1,29 @@
 {
   "$schema": "https://turborepo.org/schema.json",
+  "globalDependencies": ["**/.env"],
   "tasks": {
     "build": {
+      "env": [],
+      "inputs": [
+        "$TURBO_DEFAULT$",
+        ".env.production.local",
+        ".env.local",
+        ".env.production",
+        ".env"
+      ],
       "outputs": [".next/**", "dist/**", ".velite/**", "!.next/cache/**", "styled-system/**"],
       "dependsOn": ["^build"]
+    },
+    "dev": {
+      "inputs": [
+        "$TURBO_DEFAULT$",
+        ".env.development.local",
+        ".env.local",
+        ".env.development",
+        ".env"
+      ],
+      "persistent": true,
+      "cache": false
     },
     "lint": {},
     "test": {},

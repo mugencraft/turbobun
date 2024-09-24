@@ -1,28 +1,60 @@
 {
   "cSpell.words": [
     "aryz",
+    "autoplay",
     "biomejs",
     "breakline",
     "bunx",
+    "codegen",
+    "codemod",
+    "codiplace",
     "commitlint",
+    "commitzen",
+    "contentlayer",
     "degit",
+    "dotenvx",
     "elysia",
     "elysiajs",
     "gitmoji",
     "googleapis",
+    "isodate",
+    "jiti",
+    "Jiti",
+    "jsdevtools",
     "knip",
     "lefthook",
+    "lucide",
+    "markdownlint",
     "mugencraft",
+    "nextjs",
+    "nextpanda",
+    "othneildrew",
+    "outdir",
+    "pandacss",
+    "quickstart",
+    "rehype",
+    "shiki",
+    "shikijs",
     "tada",
     "tailwindcss",
+    "tsbuildinfo",
     "turbobun",
     "Turborepo",
-    "velite"
+    "uidotdev",
+    "usehooks",
+    "velite",
+    "webp",
+    "zustand"
   ],
   "editor.codeActionsOnSave": {
     "quickfix.biome": "explicit",
     "source.organizeImports.biome": "explicit"
   },
   "editor.defaultFormatter": "biomejs.biome",
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+    "editor.minimap.enabled": false
+  },
+  "markdown.extension.toc.levels": "2..6"
 }

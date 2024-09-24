@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041 -->
 # Elysia with Bun runtime
 
 Simple Elysia demo

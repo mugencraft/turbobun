@@ -1,0 +1,10 @@
+{
+  "default": true,
+  "MD013": {
+    "line_length": 120
+  },
+  "MD041": { "level": 2 },
+  "MD033": {
+    "allowed_elements": ["div", "img", "a", "audio", "video", "source", "p", "details", "summary"]
+  }
+}

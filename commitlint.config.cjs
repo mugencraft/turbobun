@@ -63,7 +63,7 @@ module.exports = {
       },
       {
         value: 'build',
-        name: 'build:    📦️   Changes that affect the build system or external dependencies',
+        name: 'build:    📦️  Changes that affect the build system or external dependencies',
         emoji: ':package:',
       },
       {

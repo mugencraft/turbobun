@@ -2,18 +2,19 @@ pre-commit:
   parallel: true
   commands:
     check:
-      run: bunx biome check --write --no-errors-on-unmatched --files-ignore-unknown=true {staged_files}
-      stage_fixed: true
+      run: bunx biome check {staged_files}
     sort-package-json:
       glob: "*package.json"
       run: bunx sort-package-json {staged_files} && git update-index --again
     case-police:
-      run: bunx case-police --fix {staged_files} && git update-index --again
-    # TODO implement knip
-    # knip:
-    #   run: bunx --bun knip
+      run: bunx case-police {staged_files}
+    knip:
+      run: bunx --bun knip
+    markdownlint:
+      glob: "*.{md,mdx}"
+      run: bunx --bun markdownlint '{staged_files}'
 
-
+# Validate commit messages; can be used with or without cz.
 commit-msg:
   commands:
     "lint commit message":

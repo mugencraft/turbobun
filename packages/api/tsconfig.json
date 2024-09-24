@@ -1,20 +1,8 @@
 {
+  "extends": "@turbobun/typescript-config/base.json",
   "compilerOptions": {
-    "lib": ["DOM"],
-    "composite": false,
-    "declaration": true,
-    "declarationMap": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "inlineSources": false,
-    "isolatedModules": true,
-    "moduleResolution": "node",
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
-    "preserveWatchOutput": true,
-    "skipLibCheck": true,
-    "strict": true
+    "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json"
   },
-  "include": ["."],
-  "exclude": ["dist", "build", "node_modules"]
+  "include": ["*.ts", "src"],
+  "exclude": ["node_modules"]
 }

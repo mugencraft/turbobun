@@ -1,5 +1,5 @@
 {
-  "name": "turbobun",
+  "name": "@turbobun/monorepo",
   "version": "0.0.1",
   "private": true,
   "description": "Example of Turborepo setup with Bun, Biome/OXC and commitizen stuff.",
@@ -10,13 +10,17 @@
   "scripts": {
     "build": "turbo run build --filter='!./apps/website/**'",
     "check": "biome check .",
+    "check:case": "bunx case-police .",
     "check:fix": "biome check --write .",
-    "clean": "git clean -xdf node_modules",
+    "check:knip": "bunx --bun knip",
+    "check:markdown": "bunx markdownlint '**/*.{md,mdx}' --ignore '**/node_modules/**'",
+    "check:packages": "bunx sort-package-json *package.json  --check",
+    "check:packages:fix": "bunx sort-package-json *package.json",
+    "clean": "git clean -xdf .turbo node_modules",
     "commit": "git cz",
     "dev": "bun --filter '*' dev",
     "format": "biome format .",
     "format:fix": "biome format --write .",
-    "knip": "bunx --bun knip",
     "lint": "turbo run lint",
     "lint:biome": "biome lint .",
     "lint:fix": "biome lint --write .",
@@ -31,19 +35,14 @@
     }
   },
   "devDependencies": {
-    "@biomejs/biome": "1.9.0",
-    "@commitlint/cli": "19.5.0",
-    "@commitlint/config-conventional": "19.5.0",
-    "@commitlint/cz-commitlint": "19.5.0",
-    "@commitlint/types": "19.5.0",
-    "@types/bun": "latest",
-    "commitizen": "4.3.0",
-    "cz-git": "1.9.4",
-    "inquirer": "10.2.2",
-    "knip": "5.30.1",
-    "lefthook": "1.7.15",
-    "turbo": "2.1.1",
-    "vercel": "37.4.2"
+    "@biomejs/biome": "^1.9.1",
+    "@changesets/cli": "^2.27.8",
+    "@commitlint/config-conventional": "^19.5.0",
+    "@types/bun": "^1.1.9",
+    "commitizen": "^4.3.0",
+    "cz-git": "^1.9.4",
+    "lefthook": "^1.7.15",
+    "turbo": "^2.1.2"
   },
   "peerDependencies": {
     "typescript": "^5.6.2"

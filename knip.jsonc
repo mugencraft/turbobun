@@ -1,0 +1,15 @@
+{
+  "$schema": "https://unpkg.com/knip@5/schema-jsonc.json",
+  "workspaces": {
+    ".": {
+      // knip can't find commitlint used via bunx, this results as Unused Files
+      "ignore": ["commitlint.config.cjs"],
+      "ignoreDependencies": [
+        // knip don't know that cz-git needs commitizen
+        "commitizen",
+        // ignoring commitlint.config.cjs, this results as Unused devDependencies
+        "@commitlint/config-conventional"
+      ]
+    }
+  }
+}

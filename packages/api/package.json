@@ -1,15 +1,19 @@
 {
   "name": "@turbobun/api",
   "version": "0.0.1",
+  "description": "Elysia backend example",
   "license": "MIT",
   "main": "./src/index.ts",
   "types": "./src/index.ts",
-  "scripts": {},
+  "scripts": {
+    "clean": "git clean -xdf .turbo node_modules"
+  },
   "dependencies": {
     "@elysiajs/eden": "1.1.3"
   },
   "devDependencies": {
     "@turbobun/backend": "workspace:*",
+    "@turbobun/typescript-config": "workspace:*",
     "elysia": "1.1.12",
     "typescript": "5.6.2"
   }
