@@ -4,7 +4,7 @@
   "description": "Example of Turborepo setup with Bun, Biome/OXC and commitizen stuff.",
   "workspaces": ["apps/*", "packages/*"],
   "scripts": {
-    "build": "turbo run build --filter='!./apps/website/**'",
+    "build": "concurrently --kill-others -n 'backend,web' -c '#00ccff,#ffcc00' 'bun run --filter ./apps/backend start' 'turbo build'",
     "check": "bun format-and-lint && bun check:case && bun check:knip",
     "check:case": "bunx --bun case-police",
     "check:knip": "bunx --bun knip",
@@ -29,6 +29,7 @@
     "@commitlint/config-conventional": "19.5.0",
     "@types/bun": "1.1.10",
     "commitizen": "4.3.0",
+    "concurrently": "9.0.1",
     "cz-git": "1.9.4",
     "lefthook": "1.7.16",
     "turbo": "2.1.2",

@@ -2,7 +2,7 @@ import { api } from '@turbobun/api'
 import Image from 'next/image'
 
 async function getData() {
-  const response = await api.hello_world.get()
+  const response = await api.elysia.hello_world.get()
   return response
 }
 

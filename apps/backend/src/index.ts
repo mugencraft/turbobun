@@ -1,6 +1,6 @@
 import { Elysia } from 'elysia'
 
-const app = new Elysia()
+const app = new Elysia({ prefix: '/elysia' })
   .get('/', () => 'Hi Elysia')
   .get('/hello_world', () => 'Hello World')
   .listen(3000)
