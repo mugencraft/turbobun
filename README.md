@@ -52,6 +52,8 @@ See [ROADMAP][ROADMAP]
 - [Turborepo][Turborepo] - for *faster builds*
 - [Plop][Plop] - for *code generation*
 - [degit][degit] - project scaffolding
+- [npm-check-updates][updates] for update packages (bun has issues with `bun outdated`)
+- [concurrently][concurrently] for run parallel commands
 
 ### Commit Conventions and Git Hooks
 
@@ -68,7 +70,6 @@ See [ROADMAP][ROADMAP]
 - [case-police][case-police] - 🚨 Make the case correct, PLEASE!
 - [knip][knip]- Cut the clutter from TypeScript projects
 - [MarkdownLint][MarkdownLint] for linting markdown, see [MarkdownLint rules][MarkdownLint-rules] (as VS Code suggested plugin)
-- [npm-check-updates][updates] for update packages (bun has issues with `bun outdated`)
 - [CSVode Settings][vscode-settings] - workspace settings
 - [CSVode Extensions][vscode-extensions] - suggested extensions
 
@@ -325,6 +326,7 @@ Check [CONTRIBUTING][contributors-doc] for
 [MarkdownLint]: https://github.com/DavidAnson/markdownlint
 [MarkdownLint-rules]: https://github.com/DavidAnson/markdownlint/blob/main/schema/.markdownlint.jsonc
 [updates]: https://github.com/raineorshine/npm-check-updates
+[concurrently]: https://github.com/open-cli-tools/concurrently
 
 [Elysia]: https://elysiajs.com/
 [Next.js]: https://nextjs.org/
