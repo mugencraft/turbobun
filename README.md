@@ -44,6 +44,8 @@ Powered with several **Linting Tools** and **Commit Hooks**, it will help you co
 
 ## Features
 
+See [ROADMAP][ROADMAP]
+
 ### Monorepo features
 
 - [Bun][Bun] - **node** and **vite** alternative
@@ -330,7 +332,8 @@ Check [CONTRIBUTING][contributors-doc] for
 [issues-shield]: https://img.shields.io/github/issues/mugencraft/turbobun.svg?style=for-the-badge
 [issues-url]: https://github.com/mugencraft/turbobun/issues
 [license-shield]: https://img.shields.io/github/license/mugencraft/turbobun.svg?style=for-the-badge
-[license-url]: ./docs/LICENSE
+[license-url]: ./LICENSE
+[ROADMAP]: ./ROADMAP.md
 
 [Bun]: https://bun.sh/
 [bun-workspaces]: https://bun.sh/docs/install/workspaces
