@@ -2,19 +2,19 @@
   "name": "@turbobun/monorepo",
   "private": true,
   "description": "Example of Turborepo setup with Bun, Biome/OXC and commitizen stuff.",
+  "packageManager": "bun@1.1.29",
   "workspaces": ["apps/*", "packages/*"],
   "scripts": {
+    "dev": "bun --filter '*' dev",
+    "commit": "git cz",
     "build": "concurrently --kill-others -n 'backend,web' -c '#00ccff,#ffcc00' 'bun run --filter ./apps/backend start' 'turbo build'",
+    "clean": "git clean -xdf .turbo node_modules",
     "check": "bun format-and-lint && bun check:case && bun check:knip",
     "check:case": "bunx --bun case-police",
     "check:knip": "bunx --bun knip",
     "check:updates": "bunx npm-check-updates -ui -ws",
-    "clean": "git clean -xdf .turbo node_modules",
-    "commit": "git cz",
-    "dev": "bun --filter '*' dev",
     "format-and-lint": "biome check .",
     "format-and-lint:fix": "biome check . --write",
-    "test": "turbo run test:ci",
     "typecheck": "bun run --filter '*' typecheck"
   },
   "config": {
@@ -25,15 +25,13 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.2",
-    "@changesets/cli": "2.27.8",
+    "@changesets/changelog-github": "^0.5.0",
     "@commitlint/config-conventional": "19.5.0",
     "@types/bun": "1.1.10",
     "commitizen": "4.3.0",
     "concurrently": "9.0.1",
     "cz-git": "1.9.4",
     "lefthook": "1.7.16",
-    "turbo": "2.1.2",
     "typescript": "5.6.2"
-  },
-  "packageManager": "bun@1.1.29"
+  }
 }

@@ -1,6 +1,6 @@
 [
   {
     "action": "remove",
-    "files": ["LICENSE", "README.md", "renovate.json"]
+    "files": ["renovate.json"]
   }
 ]
