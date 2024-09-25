@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "dev": "PORT=3005 next dev --turbo",
+    "dev": "next dev --turbo -p 3002",
     "start": "next start",
     "typecheck": "tsc --noEmit"
   },
@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "@types/bun": "1.1.10",
-    "@types/node": "22.6.1",
+    "@types/node": "22.7.0",
     "@types/react": "18.3.9",
     "@types/react-dom": "18.3.0",
     "@turbobun/api": "*",
