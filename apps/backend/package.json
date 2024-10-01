@@ -8,11 +8,11 @@
     "start": "bun run src/index.ts"
   },
   "dependencies": {
-    "elysia": "1.1.16"
+    "elysia": "1.1.17"
   },
   "devDependencies": {
     "@types/bun": "1.1.10",
-    "@types/node": "22.7.0",
+    "@types/node": "22.7.4",
     "@turbobun/typescript-config": "*"
   }
 }

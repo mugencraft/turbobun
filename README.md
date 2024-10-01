@@ -177,8 +177,6 @@ If a check fails your commit fails.
 
 If a linter change something automatically you can have unwanted behaviors.
 
-In our example we run the checks without fixing stuff. Only **sort-package-json** will fix the order issues.
-
 To install, run:
 
 ```sh
