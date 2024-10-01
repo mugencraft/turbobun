@@ -9,9 +9,6 @@
       },
       "case-police": {
         "run": "bunx case-police {staged_files}"
-      },
-      "knip": {
-        "run": "bunx --bun knip"
       }
     }
   },
