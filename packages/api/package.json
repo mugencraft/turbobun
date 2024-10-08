@@ -15,6 +15,6 @@
     "@turbobun/backend": "workspace:*",
     "@turbobun/typescript-config": "workspace:*",
     "elysia": "1.1.17",
-    "typescript": "5.6.2"
+    "typescript": "5.6.3"
   }
 }
