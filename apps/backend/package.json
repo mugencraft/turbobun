@@ -8,7 +8,7 @@
     "start": "bun run src/index.ts"
   },
   "dependencies": {
-    "elysia": "1.1.17"
+    "elysia": "1.1.23"
   },
   "devDependencies": {
     "@types/bun": "1.1.10",
