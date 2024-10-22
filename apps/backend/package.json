@@ -11,7 +11,7 @@
     "elysia": "1.1.17"
   },
   "devDependencies": {
-    "@types/bun": "1.1.10",
+    "@types/bun": "1.1.12",
     "@types/node": "22.7.4",
     "@turbobun/typescript-config": "*"
   }
