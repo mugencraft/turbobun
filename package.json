@@ -2,7 +2,7 @@
   "name": "@turbobun/monorepo",
   "private": true,
   "description": "Example of Turborepo setup with Bun, Biome/OXC and commitizen stuff.",
-  "packageManager": "bun@1.1.29",
+  "packageManager": "bun@1.4.2",
   "workspaces": ["apps/*", "packages/*"],
   "scripts": {
     "dev": "bun --filter '*' dev",
@@ -27,7 +27,7 @@
     "@biomejs/biome": "1.9.2",
     "@changesets/changelog-github": "0.5.0",
     "@commitlint/config-conventional": "19.5.0",
-    "@types/bun": "1.1.10",
+    "@types/bun": "1.4.2",
     "commitizen": "4.3.1",
     "concurrently": "9.0.1",
     "cz-git": "1.10.0",
